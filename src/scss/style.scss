@@ -24,7 +24,7 @@ body {
     width: 100px;
     height: 100px;
     &__ball {
-        background: linear-gradient(0.25turn, #f5ae83, #fde8a9);
+        background: linear-gradient(0.25turn, $orange, $yellow);
         width: 100%;
         height: 100%;
         border-radius: 50%;
@@ -112,7 +112,7 @@ body {
         height: 0;
         border-left: 30px solid transparent;
         border-right: 30px solid transparent;
-        border-top: 30px solid #a4aaba;
+        border-top: 30px solid $boat;
         animation: boat 1s ease infinite alternate;
         &:after,
         &:before {
@@ -124,7 +124,7 @@ body {
             height: 0;
             border-style: solid;
             border-width: 0 60px 100px 0px;
-            border-color: transparent transparent #cfc9c9 transparent;
+            border-color: transparent transparent $sail-one transparent;
             top: -136px;
             left: 60px;
         }
@@ -133,7 +133,7 @@ body {
             height: 0;
             border-style: solid;
             border-width: 0 0px 100px 80px;
-            border-color: transparent transparent #e8f2f1 transparent;
+            border-color: transparent transparent $sail-two transparent;
             top: -136px;
             left: -30px;
         }
@@ -147,7 +147,6 @@ body {
     position: relative;
     &__wave {
         box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.3);
-        // transform-origin: 200% center;
         &:nth-of-type(1) {
             height: 70px;
             background: $wave-one;
